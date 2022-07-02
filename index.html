@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gray Code Converter</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgB57W0fsloBD1ikKV7-cUjJxmxnJKqjcjtF_xN9LPTPJsJxzVbBD87aG8pom5e4ENXVtGMiB1IrhPFn4W5OVvqTC2zcgF6iSxPpSqd9ljZgcX3MDvGtd1l1d0rX3LunuyxmrGV4lzAeFTMUyEW1GHfw1P1K5PcVLyd2ANq1wtX7gJCxGsrxKtSc8VSVg/s16/happy.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="gray-code.js"></script>
+</head>
+<body>
+    <div class="py-12 dark:bg-slate-800 h-[100vh]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:text-center">
+                <h2 class="text-base text-indigo-600 font-semibold tracking-wide uppercase"> <a href="https://wa.me/8910856469" target="_blank">Made by Amit</a></h2>
+                <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl dark:text-white">
+                    Best tool to convert Gray & Binary code</p>
+                <p class="mt-4 max-w-2xl text-xl text-slate-400 lg:mx-auto dark:text-white">A numerical code used in
+                    computing in which consecutive integers are represented by binary numbers differing in only one
+                    digit is called Gray code.</p>
+            </div>
+            <div class="mt-10">
+                <div class="box">
+                    <h3 class="font-semibold mx-6 text-xl  dark:text-white">
+                        Enter Binary Number to convert into Gray Code </h3><br>
+                    <input type="number" class="rounded-lg m-6 box-border  p-2 border-4" id="binaryIp"
+                        placeholder="Enter binary here" required autofocus>
+                    <button onclick="grayCode()"
+                        class="rounded-lg m-6 box-border  p-2 border-4 dark:text-white  bg-indigo-500 shadow-lg hover:shadow-indigo-500/50 hover:skew-y-6 "
+                        id="submitBtn">Submit
+                        Now</button>
+                    <div class="result dark:text-white h-6 my-3 mx-6">
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="box mt-5">
+                <h3 class="font-semibold mx-6 text-xl  dark:text-white">
+                    Enter Gray Code to convert into Binary </h3><br>
+                <input type="number" class="rounded-lg m-6 box-border  p-2 border-4" id="grayIp"
+                    placeholder="Enter Gray code here" required autofocus>
+                <button onclick="binaryCode()"
+                    class="rounded-lg m-6 box-border dark:text-white p-2 border-4 bg-indigo-500 shadow-lg hover:shadow-indigo-500/50 hover:skew-y-6"
+                    id="submitBtn"> Submit Now
+                </button>
+                <div class="resultbin dark:text-white h-6 my-3 mx-6">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+    </script>
+</body>
+</html>
